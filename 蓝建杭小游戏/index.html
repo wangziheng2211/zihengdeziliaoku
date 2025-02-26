@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建杭的贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen" id="startScreen">
+        <img src="/Users/cds-dn-680/Desktop/蓝建杭小游戏/IMG_3253.JPG" alt="建杭头像" class="avatar">
+        <button class="start-button" onclick="startGame()">开始游戏</button>
+    </div>
+
+    <div class="game-screen" id="gameScreen" style="display: none;">
+        <div class="score">分数: <span id="scoreValue">0</span></div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div class="rain" id="rain" style="display: none;"></div>
+
+    <div class="modal" id="gameOverModal" style="display: none;">
+        <div class="modal-content">
+            <h2>不哭不哭~</h2>
+            <p>建杭疼你 ❤️</p>
+            <button onclick="restartGame()">再玩一次</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
